@@ -12,7 +12,7 @@ connectToMongo();
 const app = express();
 app.use(
   cors({
-    origin: "https://inotebook-2mvv.onrender.com",
+    origin: "*",
     methods: ["GET", "POST", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
